@@ -47,9 +47,7 @@ section {
 }
 
 #resetBtn:hover {
-    background-color: lightyellow;
-    color: crimson;
-    box-shadow: 1px 1px 30px 1px lightyellow;
+    box-shadow: 1px 1px 30px 1px lightgray;
     transition: all 0.3s;
 }
 
@@ -58,4 +56,5 @@ section {
     width: 10rem;
     margin: 1rem;
     padding: 1.5rem 2rem;
+    cursor: pointer;
 }
