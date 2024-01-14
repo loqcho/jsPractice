@@ -7,6 +7,7 @@
 
 body {
     background-color: antiquewhite;
+    transition: background-color 0.5s;
 }
 
 section {
@@ -31,7 +32,7 @@ section {
     box-shadow: 1px 1px 30px 1px lightblue;
     font-size: 1rem;
     font-weight: 700;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .wrap-resetBtn {
@@ -48,7 +49,7 @@ section {
 
 #resetBtn:hover {
     box-shadow: 1px 1px 30px 1px lightgray;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .btn {
@@ -57,4 +58,5 @@ section {
     margin: 1rem;
     padding: 1.5rem 2rem;
     cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
 }
