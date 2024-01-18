@@ -22,21 +22,24 @@ let colorSets = [
         buttonColor: 'black',
         buttonTextColor: 'aliceblue',
         resetColor: 'aliceblue',
-        resetTextColor: 'black'
+        resetTextColor: 'black',
+        buttonText: 'LUCKY DAY'
     },
     {
         backgroundColor:'royalblue',
         buttonColor: 'antiquewhite',
         buttonTextColor: 'royalblue',
         resetColor: 'aliceblue',
-        resetTextColor: 'royalblue'
+        resetTextColor: 'royalblue',
+        buttonText: 'GOOD DAY'
     },
     {
         backgroundColor:'lavenderblush',
         buttonColor: 'crimson',
         buttonTextColor: 'aliceblue',
         resetColor: 'ghostwhite',
-        resetTextColor: 'crimson'
+        resetTextColor: 'crimson',
+        buttonText: 'SPACIAL DAY'
     }
 ];
 
@@ -49,13 +52,13 @@ function changeEvent() {
     let randomIndex;
     do {
         randomIndex = Math.floor(Math.random() * colorSets.length);
-
     } while (randomIndex === prevColorIndex);
 
     // 선택된 컬러 세트 적용
     let selectedColorSet = colorSets[randomIndex];
     applyColorSet(selectedColorSet);
-
+    // 이벤트 버튼 텍스트 업데이트
+    eventBtn.textContent = selectedColorSet.buttonText;
     // 이전 인덱스 업데이트
     prevColorIndex =  randomIndex;
 }
@@ -64,6 +67,8 @@ function changeEvent() {
 function resetColors() {
     // resetBtn 클릭시 컬러 초기값으로 재설정
     applyColorSet(initialColorSet);
+    // 이벤트 버튼 텍스트 초기화
+    eventBtn.textContent = 'HAPPY NEW YEAR';
     // 컬러 세트 인덱스 초기화
     prevColorIndex = -1;
 }
