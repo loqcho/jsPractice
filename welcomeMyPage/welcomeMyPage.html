@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="welcomeMyPage.css">
+    <script src="welcomeMyPage.js" defer></script>
     <title>Welcome My Page</title>
 </head>
 <body>
@@ -24,10 +25,11 @@
     <div class="container-main">
         <div class="wrap-form">
             <span class="form-title-text">Welcome My Page</span>
-                <form class="box-form">
-                    <input type="text" name="userId" placeholder="ID" class="signId" >
-                    <input type="password" name="userPwd" placeholder="password" class="signPwd">
-                    <input type="submit">
+                <form id="sign-form" class="box-form">
+                    <input type="text" name="username" id="sign-username" class="sign-field" placeholder="ID">
+                    <input type="password" name="password" id="sign-password" class="sign-field" placeholder="password">
+                    <input type="submit" id="sign-submit" value="SIGN IN">
+                    <span id="error-message" class="error-message-form"></span>
                 </form>
         </div>
     </div>

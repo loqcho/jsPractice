@@ -5,45 +5,55 @@
     font-weight: 200;
 }
 
-body {
-    background-color: lightgray;
-}
-
 nav {
-    background-color: lightblue;
+    margin: 5px 0 5px 0;
 }
 
 .container-nav {
-    background-color: lightyellow;
     display: flex;
     justify-content: space-between;
 }
 
 .wrap-welcomeMessage {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
 }
 
 .wrap-signBtn {
-    background-color: aliceblue;
+    /*background-color: aliceblue;*/
 }
 
 main {
-    background-color: grey;
+    /*background-color: grey;*/
+    border-top: 1px solid black;
+
 }
 
 .container-main {
     height: 100vh;
-    background-color: burlywood;
+    /*background-color: burlywood;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .wrap-form {
-    background-color: royalblue;
+    /*background-color: royalblue;*/
+    text-align: center;
 
 }
 
 .box-form {
-    background-color: lightyellow;
+    /*background-color: lightyellow;*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px
+}
+
+.box-form > input {
+    margin: 5px 0 5px 0;
+}
+
+.error-message-form {
+    font-size: 0.7rem;
+    color: crimson;
 }
